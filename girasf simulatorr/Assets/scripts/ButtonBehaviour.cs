@@ -4,10 +4,19 @@ using UnityEngine;
 
 public class ButtonBehaviour : MonoBehaviour
 {
-    int n;
+    //  int n;
+    //  public GameObject player;
+    //public playerspawner playerspawner;
+
     public void OnButtonPress()
     {
-        n++;
-        Debug.Log("Button clicked " + n + " times.");
+        //  n++;
+        //    Debug.Log("Button clicked " + n + " times.");
+
+        //  GameObject thisproj = Instantiate(player, transform.position, transform.rotation);
+        Debug.Log("BUTTON PRESSED");
+        GameObject.FindObjectOfType<playerspawner>().Pressspawn();
+      //  playerspawner.Pressspawn();
+
     }
 }
