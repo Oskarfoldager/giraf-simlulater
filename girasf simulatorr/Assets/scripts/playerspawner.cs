@@ -8,9 +8,16 @@ public class playerspawner : MonoBehaviour
     int n = 0;
     public GameObject trashcan;
     public int trashcannumber = 100;
+    public GameObject camera;
+    public GameObject player;
 
 
-   public Vector3 startpos;
+    public void Start()
+    {
+        camera.SetActive(false);
+        player.transform.position = new Vector3(100, -10, 100);
+    }
+
     public void Pressspawn()
     {
 
@@ -22,7 +29,8 @@ public class playerspawner : MonoBehaviour
         }
 
 
-
+        camera.SetActive(true);
+        player.transform.position = new Vector3(0,0,0);
 
         n++;
         Debug.Log("Button clicked " + n + " times.");
