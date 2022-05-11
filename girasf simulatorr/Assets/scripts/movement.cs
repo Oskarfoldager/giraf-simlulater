@@ -17,11 +17,11 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.Space)))
-        {
-            rb.AddForce(Vector3.up * 8, ForceMode.VelocityChange);
+        //if ((Input.GetKeyDown(KeyCode.Space)))
+       // {
+       //     rb.AddForce(Vector3.up * 8, ForceMode.VelocityChange);
 
-        }
+      //  }
         if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
 

@@ -10,11 +10,12 @@ public class playerspawner : MonoBehaviour
     public int trashcannumber = 100;
     public GameObject camera;
     public GameObject player;
+            public GameObject button;
 
 
     public void Start()
     {
-        camera.SetActive(false);
+        camera.SetActive(true);
         player.transform.position = new Vector3(100, -10, 100);
     }
 
@@ -28,8 +29,8 @@ public class playerspawner : MonoBehaviour
             Instantiate(trashcan, position, Quaternion.identity);
         }
 
-
-        camera.SetActive(true);
+        button.SetActive(false);
+        camera.SetActive(false);
         player.transform.position = new Vector3(0,0,0);
 
         n++;
