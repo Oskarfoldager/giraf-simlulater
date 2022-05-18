@@ -16,8 +16,8 @@ public class ButtonBehaviour : MonoBehaviour
         //  GameObject thisproj = Instantiate(player, transform.position, transform.rotation);
         Debug.Log("BUTTON PRESSED");
         GameObject.FindObjectOfType<playerspawner>().Pressspawn();
-      //  gameObject.GetComponent<timerthing>().gamesisactive = true;
-        GameObject.FindGameObjectWithTag("Player").GetComponent<timerthing>().gamesisactive = true;
+        //  gameObject.GetComponent<timerthing>().gamesisactive = true;
+        timerthing.gamesisactive = true;
         //  playerspawner.Pressspawn();
 
     }

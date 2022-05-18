@@ -8,14 +8,14 @@ public class playerspawner : MonoBehaviour
     int n = 0;
     public GameObject trashcan;
     public int trashcannumber = 100;
-    public GameObject camera;
+
     public GameObject player;
-            public GameObject button;
+
 
 
     public void Start()
     {
-        camera.SetActive(true);
+
         player.transform.position = new Vector3(100, -10, 100);
     }
 
@@ -29,12 +29,12 @@ public class playerspawner : MonoBehaviour
             Instantiate(trashcan, position, Quaternion.identity);
         }
 
-        button.SetActive(false);
-        camera.SetActive(false);
-        player.transform.position = new Vector3(0,0,0);
+        player.transform.position = new Vector3(0,0,-44);
 
         n++;
         Debug.Log("Button clicked " + n + " times.");
+        stuff_collision.points = 0;
+        timerthing.time = 0;
 
       //  rb.position = startpos;
     //    rb.velocity = Vector3.zero;

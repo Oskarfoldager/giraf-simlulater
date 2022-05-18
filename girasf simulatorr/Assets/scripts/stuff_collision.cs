@@ -7,6 +7,7 @@ public class stuff_collision : MonoBehaviour
     public Rigidbody rb;
     public int Forceamount = 12;
     public static int points = 0;
+    public static int highscore = 0;
 
     void OnCollisionEnter(Collision collision)
     {
@@ -19,6 +20,14 @@ public class stuff_collision : MonoBehaviour
             points += 1;
         }
 
+
+    }
+    private void Update()
+    {
+        if(highscore < points)
+        {
+            highscore = points;
+        }
     }
 
 }

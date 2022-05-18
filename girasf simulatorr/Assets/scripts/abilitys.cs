@@ -6,6 +6,7 @@ public class abilitys : MonoBehaviour
 {
 
     public GameObject player;
+    public Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,9 @@ public class abilitys : MonoBehaviour
     public void turnplayer()
     {
         transform.eulerAngles = new Vector3(0f, 0f, 0f);
+        transform.position = new Vector3(0f, 0f, -44f);
+        rb.velocity = new Vector3(0f, 0f, 0f);
+        
     }
 
 }
